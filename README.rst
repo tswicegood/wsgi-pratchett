@@ -2,7 +2,10 @@
 GNU Terry Pratchett for WSGI
 ============================
 
-Simple WSGI middleware for adding Terry Pratchett's header to your requests.
+Simple WSGI middleware for adding Terry Pratchett's header to your requests per
+the conversation that's happening `on reddit`_
+
+.. _on reddit: https://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett
 
 
 -----

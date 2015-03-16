@@ -6,7 +6,7 @@ else:
 
 setup(
     name='wsgi-pratchett',
-    version='1.0.0',
+    version='1.0.1',
     author='Travis Swicegood',
     author_email='development@domain51.com',
     description='GNU Terry Pratchett for WSGI',
