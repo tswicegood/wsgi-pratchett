@@ -1,4 +1,4 @@
-HEADER = ("X-Clacks-Overheard", "GNU Terry Pratchett")
+HEADER = ("X-Clacks-Overhead", "GNU Terry Pratchett")
 
 
 class GNUTerryPratchett(object):
@@ -12,3 +12,6 @@ class GNUTerryPratchett(object):
             return start_response(status, headers, *args, **kwargs)
 
         return self.app(environ, clacker)
+
+def make_filter(global_conf):
+    return GNUTerryPratchett

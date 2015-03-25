@@ -21,3 +21,15 @@ WSGI middleware is pretty simple.  Wrap your WSGI application in an instance of
 
     # ... your code here, create your WSGI application
     app = GNUTerryPratchett(your_app)
+
+
+When using PasteDeploy configuration files you can also add the middleware there.
+
+.. code-block:: ini
+
+    # Your main application
+    [app:main]
+    filter-with = pratchett
+
+    [filter:pratchett]
+    use = egg:wsgi-pratchett

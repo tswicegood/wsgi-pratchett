@@ -14,4 +14,9 @@ setup(
     packages=['pratchett', ],
     include_package_data=True,
     zip_safe=False,
+    entry_points="""
+    # -*- Entry points: -*-
+    [paste.filter_factory]
+    main = pratchett:make_filter
+    """,
 )
