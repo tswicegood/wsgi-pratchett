@@ -13,5 +13,6 @@ class GNUTerryPratchett(object):
 
         return self.app(environ, clacker)
 
+
 def make_filter(global_conf):
     return GNUTerryPratchett
