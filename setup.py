@@ -6,7 +6,7 @@ else:
 
 setup(
     name='wsgi-pratchett',
-    version='2.0.0',
+    version='2.1.0',
     author='Travis Swicegood',
     author_email='development@domain51.com',
     description='GNU Terry Pratchett for WSGI',
@@ -14,4 +14,9 @@ setup(
     packages=['pratchett', ],
     include_package_data=True,
     zip_safe=False,
+    entry_points={
+        "paste.filter_factory": [
+            "main = pratchett:make_filter",
+        ],
+    },
 )
